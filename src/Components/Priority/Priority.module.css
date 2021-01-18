@@ -1,0 +1,17 @@
+@import "../../vars.css";
+
+.outer {
+	cursor: pointer;
+}
+
+.selected {
+	fill: var(--color-rating);
+}
+
+.deselected {
+	fill: var(--color-disabled);
+}
+
+.editable :hover {
+	cursor: pointer;
+}

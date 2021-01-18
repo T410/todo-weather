@@ -1,0 +1,73 @@
+@import "../../vars.css";
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	color: white;
+	text-align: center;
+	transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+	transform: scale(1.1);
+	filter: brightness(1.1);
+}
+
+.button:active {
+	transform: scale(0.9);
+	filter: brightness(0.9);
+}
+
+.button * {
+	display: flex !important;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.rounded {
+	width: 6rem;
+	height: 2rem;
+	border-radius: 2rem;
+}
+
+.disabled {
+	background-color: var(--color-disabled) !important;
+}
+
+.enabled {
+	cursor: pointer;
+}
+
+.success {
+	background-color: var(--color-success);
+}
+
+.warning {
+	background-color: var(--color-warning);
+}
+
+.warning > svg {
+	fill: #fff;
+}
+
+.neutral {
+	background-color: var(--color-neutral);
+}
+
+.info {
+	background-color: var(--color-info);
+}
+
+.info > svg {
+	fill: #fff;
+}
+
+.circle {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	color: var(--color-black);
+}

@@ -1,0 +1,257 @@
+@import "../../vars.css";
+
+.todoContainerOuter {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 3;
+	box-shadow: 5px 0px 7px 6px #bbb;
+	padding: 0 1rem 1rem 1rem;
+}
+
+.todoContainerMiddle {
+	display: flex;
+	flex-direction: column;
+}
+
+.todoSort {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 0.5rem;
+}
+
+.todoSort label {
+	margin-right: 0.5rem;
+}
+
+.todoItemOuter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 0.5rem;
+}
+
+.todoItemInner {
+	flex: 4;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: left;
+	border: 1px solid #193047;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	transition: background-color 0.2s ease-in-out;
+	background-color: #ffffff;
+}
+
+.todoButtons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.todoButtons button {
+	margin-left: 0.5rem;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+.todoItemInner:hover {
+	background-color: #c2b7ff;
+}
+
+.todoTitle {
+	height: 100%;
+	font-weight: 500;
+	font-size: large;
+}
+
+.todoTitle:focus {
+	outline-style: none;
+}
+
+.descriptionSummary {
+	font-size: x-small;
+	margin-left: 2rem;
+}
+
+.todoInfo {
+	display: flex;
+	flex: 4;
+}
+
+.todoDescription {
+	display: flex;
+	overflow-wrap: anywhere;
+	flex: 2;
+}
+
+.todoPriority {
+	display: flex;
+	justify-content: flex-end;
+	align-self: flex-start;
+}
+
+.todoDate {
+	font-weight: 300;
+	font-size: smaller;
+	justify-content: flex-end;
+	text-align: right;
+}
+
+.todoAddButtonOuter {
+	justify-content: center;
+	position: fixed;
+	bottom: 1rem;
+	left: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.todoAdd {
+	position: fixed;
+	display: flex;
+	margin-bottom: 0 !important;
+	justify-content: center;
+	left: calc(31.825% - (var(--width-card) / 2));
+	flex-direction: column;
+	align-items: center;
+	bottom: -20rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.showAdd {
+		animation: show 0.3s ease-in-out forwards;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.hideAdd {
+		animation: hide 0.3s ease-in-out forwards;
+	}
+}
+
+@keyframes show {
+	0% {
+		bottom: -20rem;
+	}
+	100% {
+		bottom: 0rem;
+	}
+}
+
+@keyframes hide {
+	0% {
+		bottom: 0rem;
+	}
+	100% {
+		bottom: -20rem;
+	}
+}
+
+.todoList {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 5%;
+}
+
+.inputOuter {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+.priority {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.priority * {
+	margin-left: 0.1rem;
+}
+
+.inputElement {
+	/* margin: 0 1em 0 1em; */
+	width: 100%;
+	font-size: large;
+}
+
+.addButton {
+	width: 2rem;
+	height: 2rem;
+	font-size: large;
+	background-color: #16a085;
+	box-shadow: 0 5px 15px #193047;
+	border: none;
+	border-radius: 2rem;
+	color: #fff;
+	text-align: center !important;
+	padding: 0;
+}
+
+.addButton:active {
+	/* background-color: rgb(74, 179, 74); */
+	box-shadow: 0 1px 5px #193047;
+}
+
+.addButton:focus {
+	outline: none;
+}
+
+.label {
+	font-size: larger;
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+	height: auto;
+	line-height: 18px;
+}
+
+.card {
+	box-shadow: 0px -5px 100px #e1e1e3, -15px -15px 27px #ffffff;
+	border: 1px solid #bbb;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #fff;
+	margin: 0.5rem 0.5rem 0 0.5rem;
+	padding: 1rem;
+	width: var(--width-card);
+	height: var(--height-card);
+}
+
+.card * {
+	text-align: left;
+}
+
+.card p {
+	margin: 0;
+	padding: 0;
+}
+
+.cardRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cardRow :nth-child(1) {
+	margin: 0 0.2em 0 0.2em;
+}
+
+.line {
+	width: 100%;
+}
