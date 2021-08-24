@@ -1,7 +1,6 @@
 # Some Notes
 - Written some several tests (Used vscode extension for jest)
-- .env file contains the API key for openweathermap
-- Hope everything goes well 🤞
+- Didn't build a back-end for thius one so .env file should contain openweathermap API key
 
 # Available Scripts
 
